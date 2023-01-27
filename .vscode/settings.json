@@ -1,0 +1,7 @@
+{
+    "zenMode.fullScreen": false,
+    "files.autoSave": "off",
+    "editor.cursorStyle": "block-outline",
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "languageDefined"
+}

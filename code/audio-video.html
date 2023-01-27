@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Audio and Video Tag</title>
+</head>
+
+<body>
+
+    <!-- Inserting Video In a webpage -->
+    <!-- 1st method to insert video this method is prefered nowadays -->
+    <video controls autoplay
+        src="https://player.vimeo.com/progressive_redirect/playback/784449955/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c6d6a42192185e70732954b2bb3fcba452095bbf12f8be21963f8014a101f93f">This
+        Text will work as alt text </video>
+
+    <!-- 2nd method to insert video in a page -->
+    <video controls autoplay>
+        <!-- in this method this will try to insert that video which will load first -->
+        <source
+            src="https://player.vimeo.com/progressive_redirect/playback/784449955/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c6d6a42192185e70732954b2bb3fcba452095bbf12f8be21963f8014a101f93f">
+        <source
+            src="https://player.vimeo.com/external/481940821.sd.mp4?s=8684132c799401cc19745db9ef0a11485c246049&profile_id=165&oauth2_token_id=57447761">
+
+
+    </video>
+
+    <!-- Inserting Audio in a web page -->
+    <audio src="C:\Users\DIVYANSH\Desktop\Web Dev - PW\Web-Developement-Learning-Material\assets\audio\something-about-you-marilyn-ford-135781.mp3" controls  autoplay>audio</audio>
+</body>
+
+</html>
