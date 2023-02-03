@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+
+    <!-- Style -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+
+        }
+
+        .box1 {
+
+
+            background-color: blue;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            /* This box will be now placed at 10px away from its original TOP position and
+            10px away from its original LEFT position  */
+
+
+        }
+
+        .box2 {
+
+            background-color: rgb(255, 132, 0);
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            /* This box will be now placed at  200px TOP  position  away with respect to its parent  and 200px LEFT position  away with respect to its parent   */
+        }
+
+        .box3 {
+
+            background-color: rgb(217, 255, 0);
+            position: sticky;
+            top: 10px;
+            left: 100px;
+
+            /* This box will get sticked at top-10px and left-100px while scrolling over the page  */
+
+
+        }
+
+        .box4{
+            background-color: red;
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+            border-radius: 100%;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- In CSS position concept came into Existence  so that a developer can easily modify the placing structure of any element which means that by the help this a developer now can easily posiition any element at any place in the web page by just giving four value and these are TOP_BOTTOM_RIGHT_LEFT  -->
+
+    <!-- Postion are of 1...Static   2...Sticky  3...Fixed  4...Relative  5...Absolute -->
+    <!-- Sticky-- this means that the element will get sticked on the particular place (defined by user - TBRL) of web page with Parent and all the other part of web page will scroll -->
+    <!-- Static-- This position is the Default Poaition we always get in normal CSS  -->
+    <!-- Fixed--- This Position is Used when we Want any element to be fixed at one place always which means its position will always be same irrespective of any change in viewport or else .. for example - chat Support icon on any website.. This always takes TBRL values -->
+    <!-- Relative-- This position is very commonly used to position any element with respect to its current Position   -->
+    <!-- Absolute--- This Position is used to position any element with respect to its parent Element  -->
+
+
+    <main>
+
+
+        <div class="box box1">Relative</div>
+        <div class="box box2">Absolute</div>
+        <div class="box box3">Sticky <br>Scroll to see </div>
+        <div class="box box4">Fixed <br> Scroll to See  </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugiat quaerat, ex quas eveniet nam porro
+            asperiores quam quidem doloribus vitae, quisquam quod inventore molestias nisi ratione corporis nemo
+            placeat, incidunt sequi iure! Accusantium eveniet dolore quo beatae, dolorum nihil quis exercitationem nulla
+            qui iure quaerat, ipsa possimus adipisci quidem sunt nesciunt libero velit repellat quae facilis vero omnis
+            unde voluptatibus. Soluta possimus eveniet quasi hic sunt ut, modi commodi temporibus earum recusandae dolor
+            maxime aliquam eius laudantium. Totam deleniti doloremque, ad animi dolorem reiciendis, quibusdam corrupti
+            et quaerat quo vel ducimus esse itaque suscipit accusamus, incidunt vero sequi debitis veniam error aliquam
+            dignissimos fugit. Optio impedit blanditiis pariatur dolorem dicta vel sequi, aspernatur rerum quibusdam.
+            Modi aspernatur dolorem nulla assumenda adipisci vero sunt! Omnis, quod. Iure tempore minima aperiam earum,
+            commodi voluptate, tempora sequi quaerat, odio placeat corporis? Hic, necessitatibus delectus accusamus
+            soluta cum, beatae corrupti tenetur modi voluptatibus dolor, dignissimos suscipit sed quia aliquam
+            consequatur consectetur distinctio minus sequi quos non sint doloribus ratione consequuntur! Totam, modi
+            necessitatibus? Officiis laudantium placeat cum consequuntur harum modi doloremque eius consectetur ullam,
+            aperiam odio, quam necessitatibus aliquid corporis nemo veniam, facilis nam similique suscipit voluptatibus
+            nisi excepturi. Laboriosam voluptatum modi sit cumque obcaecati, ipsam itaque dolore sapiente quod est
+            officia, dolor aliquam. Cum voluptatibus qui dicta quam quaerat eum suscipit quidem. Ullam soluta, totam
+            tempore esse id aliquid quasi consequuntur ipsam consectetur nemo unde sit nobis quo, dignissimos facilis
+            eligendi amet dolorem. Nostrum nihil debitis qui obcaecati dicta rem mollitia similique! Deserunt eius
+            excepturi consequatur eligendi voluptatem quibusdam autem ex enim itaque facilis sapiente ipsa rerum, ea
+            impedit cupiditate voluptas nisi a voluptatibus esse qui, natus ipsam tempora. Sed ad quibusdam dolore id,
+            aliquam sint recusandae minus, cumque non, labore consequatur neque assumenda veniam autem molestiae
+            sapiente explicabo rerum quam a ipsum fugiat officiis. Recusandae consectetur laboriosam enim quidem ipsa
+            quasi dicta ab ullam harum, magnam quisquam natus delectus, assumenda iste, autem nesciunt? Cupiditate
+            voluptatem accusantium eligendi at similique reiciendis hic assumenda! Vel obcaecati accusamus nulla
+            temporibus hic quas repellat quod officiis doloremque natus earum suscipit, laudantium aut dolorum
+            consequatur reiciendis est corrupti, placeat deleniti, nesciunt sapiente numquam magnam porro. Aperiam
+            reiciendis voluptatem eius libero fuga blanditiis cum facilis sequi eveniet excepturi natus nisi, delectus
+            minus itaque exercitationem perferendis architecto molestiae eum cupiditate ex, cumque ullam harum impedit!
+            Pariatur voluptates autem illo deserunt! Provident ipsam harum tenetur ex repudiandae, eius odio eveniet
+            aspernatur doloremque dolor sapiente, facilis laborum qui vitae distinctio numquam? Qui, eum amet. Est quos
+            nemo molestias, non atque eaque quasi, harum expedita iste minima reprehenderit hic quidem ipsam, ea quam.
+            Dolor ea, tempora facere necessitatibus, sapiente accusantium delectus rerum dolores consectetur nam in.
+            Deleniti perspiciatis quos corrupti, nulla exercitationem quis voluptatem corporis nemo dolores, ex,
+            pariatur necessitatibus dicta eaque. Odio laudantium delectus nobis tempore optio culpa repellat est
+            deserunt reprehenderit, commodi veritatis at nulla soluta suscipit magnam sint et nemo minima! Expedita
+            deserunt ducimus consequatur ullam! Quam, fugiat omnis. Dolore vero quos amet ea. Illo enim consequatur
+            consectetur quia! Eveniet, aliquam aut sunt doloremque iste autem quasi similique voluptate illum sed
+            impedit alias delectus, provident reiciendis quod maiores adipisci unde? Incidunt minus vero perferendis
+            unde necessitatibus accusamus sunt voluptate, illum quaerat velit architecto molestiae amet. Possimus
+            impedit, quibusdam voluptate, amet, ut error veritatis similique consequuntur quia ullam itaque voluptates
+            quis laboriosam quo excepturi rerum nisi facere debitis consequatur repudiandae perspiciatis. Rerum,
+            pariatur quaerat! Sit maxime deserunt, voluptates quod corrupti dolorem totam praesentium a assumenda rerum,
+            nam labore esse quas natus et sapiente reiciendis magni mollitia est quisquam magnam, veniam eligendi. Cum
+            iste quidem dolor officiis nobis optio veniam modi a labore. Cumque, asperiores et omnis harum alias
+            voluptatibus aperiam porro nobis labore incidunt, deserunt illum soluta laborum facere amet architecto
+            numquam, cupiditate consequatur neque? Velit voluptatum praesentium nulla ipsam quae necessitatibus aliquid
+            qui? Quae minus, libero nemo incidunt quibusdam repellendus odit omnis. Praesentium incidunt similique
+            aperiam veritatis deleniti nihil accusantium necessitatibus quod iusto, voluptatem quibusdam quae quisquam
+            aut molestiae amet deserunt consectetur enim sequi. Excepturi aliquid, quibusdam, officiis est rem ea harum
+            vero officia dolore reprehenderit illo. Dicta reiciendis nostrum repellat, eligendi magni est libero facilis
+            iure, ad exercitationem odit explicabo non eius quaerat optio! Voluptatem minus magnam laboriosam temporibus
+            excepturi natus vel, vitae porro maiores exercitationem? Alias ducimus tempora beatae eos nisi harum ad odit
+            inventore neque excepturi impedit in non suscipit repudiandae, quod iure maiores. Veritatis tenetur vel
+            facilis doloribus cum culpa aperiam sed ut officia ullam corrupti eligendi ipsa, consectetur totam, iusto
+            quis sapiente facere ratione eaque quibusdam sit ipsum. Corrupti fugit debitis veritatis sapiente
+            voluptates, temporibus eaque dicta facilis nesciunt in vitae nihil quia nobis dolorum sed a itaque ex.
+            Tempora debitis possimus fuga quisquam at a iure mollitia eaque magnam, odit minus nihil quibusdam
+            aspernatur quam. Fugit dolore alias itaque adipisci qui dolor veniam nulla doloribus, corporis tempore
+            tenetur atque nihil explicabo porro repellendus quod deleniti architecto quisquam labore necessitatibus
+            pariatur obcaecati cum voluptatem aliquid! Quas repellendus consequuntur dolorem fuga, ut tempore excepturi
+            voluptatum, debitis laborum magnam enim culpa labore tenetur, numquam delectus id ipsa iste. Reprehenderit
+            fugiat illo dolore iste nam corrupti! Incidunt iste neque corporis minus velit ut quis ratione
+            exercitationem cum. Autem minima perferendis debitis ad fugit esse eveniet, aut unde officia dolorem dolores
+            delectus libero dicta vitae facilis deserunt odit non id! Accusantium quibusdam dolore odio debitis! Culpa
+            corrupti, voluptas nesciunt distinctio, laudantium minus molestias quos placeat ad aliquam error sapiente
+            voluptatibus necessitatibus, maxime vero ut facere? Excepturi illo, error eligendi temporibus placeat
+            aspernatur architecto, nostrum dignissimos voluptas, optio rem? Delectus iste accusamus quae. A dolorum
+            quisquam quia recusandae sapiente facere voluptates perspiciatis velit maiores atque? Distinctio quae soluta
+            et in, quis mollitia optio ipsam libero quam nostrum laboriosam voluptas doloribus nobis dolorem odio rerum
+            recusandae. Iusto alias quas adipisci ab labore dolores mollitia illo architecto sapiente? Temporibus
+            delectus fugit corporis eum, expedita ut sequi quisquam adipisci consequuntur enim eligendi, aspernatur sit
+            incidunt at harum deserunt ullam itaque totam tenetur. Minima ipsam obcaecati est et omnis repudiandae
+            quidem placeat.</p>
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>

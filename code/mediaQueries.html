@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries in CSS</title>
+
+    <!-- style -->
+    <style>
+        div {
+            text-align: center;
+            font-size: x-large;
+        }
+
+
+        /* Media QUeries for Different Screens  */
+
+        /* Extra Small Devices--phones */
+        @media (max-width: 600px) {
+            body {
+                background-color: blue;
+            }
+
+            div::after {
+                content: "Extra Small Devices--phones";
+            }
+
+        }
+
+        /* Small devices like Portrait Tabs , large phones  */
+        @media (min-width:600px) and (max-width:768px) {
+            body {
+                background-color: rgb(171, 171, 218);
+            }
+
+            div::after {
+                content: "Portrait Tabs , large phones";
+            }
+
+        }
+
+
+        /* Medium devices like Landscape Tabs */
+        @media (min-width:768px) and (max-width:992px) {
+            body {
+                background-color: rgb(51, 240, 92);
+            }
+
+            div::after {
+                content: "Medium devices like Landscape Tabs";
+            }
+
+        }
+
+        /* Large Devices like Laptops and desktops */
+        @media (min-width:992px) and (max-width:1200px) {
+
+            body {
+                background-color: rgb(231, 52, 52);
+            }
+
+            div::after {
+                content: "Large Devices like Laptops and desktops ";
+            }
+        }
+
+
+
+        /* Extra-Large Devices like Large Laptops and Desktop screens */
+        @media (min-width:1200px) {
+            body {
+                background-color: rgb(238, 53, 255);
+            }
+
+            div::after {
+                content: " Extra-Large Devices like Large Laptops and Desktop screens ";
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
