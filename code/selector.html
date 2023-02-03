@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- styles -->
+    <style>
+        /* Universal Selector- " * " */
+        /* used to reset or change the CSS to all the default CSS applied by te browser  */
+        * {
+            /* padding: 0px;
+    margin: 0px; */
+        }
+
+        /* element selector is used to target particular html element  but this is not recommended for big webpage*/
+        h1 {
+            color: red;
+        }
+
+        /* class selector is used to target more than 1 element using single class and can change or apply CSS to all those element using single code  */
+        /* we can apply the properties of different class in single element  */
+        .paragraph {
+            color: blue;
+        }
+
+        .font-large {
+            font-size: 30px;
+        }
+
+        /* ID selector is used to apply or change the CSS of Single particular target uniquely */
+
+        #main-heading {
+            background-color: grey;
+        }
+
+        /* Decsendent is the child element of any parent so descendent slectors are used to select the child element of any parent element  */
+        main h1 p {
+            color: blue;
+        }
+
+        /* child selector working is also same as descendent selector but the main difference is about thier synatx of writing or applying  */
+
+        h1>p {
+            color: rgb(222, 0, 0);
+        }
+
+        /* adjacent sibling selector is used to target two consecutive elements using these selectors like example */
+
+        section+p {
+            color: blueviolet;
+        }
+
+        /* general sibling selector is used to target all similar child sibling after the parent  */
+
+        div~p {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Normal Selector</legend>
+
+        <h1>hello world</h1>
+        <h2 id="main-heading">THis is ID selector </h2>
+
+        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, aliquid.</p>
+        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, aliquid.</p>
+        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, aliquid.</p>
+
+
+        <!-- This paragraph will take properties of two classes i.e "paragraph and font-large" -->
+        <p class="paragraph font-large"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus dolore
+            doloribus architecto nobis quia, ratione deserunt aliquam nulla tempore.</p>
+
+    </fieldset>
+
+
+    <br>
+
+    <br>
+
+
+    <!-- Descendent Selector -->
+    <fieldset>
+        <legend>Descendent Selector part</legend>
+
+
+
+        <h1>hello world</h1>
+        <main>
+            <h1>
+                <p>Hello world paragraph</p>
+            </h1>
+        </main>
+
+        <h1>
+            <p>Hello World heading paragraph </p>
+        </h1>
+
+
+
+    </fieldset>
+
+    <br>
+    <br>
+
+
+    <fieldset>
+        <legend>Child selector!</legend>
+
+        <main>
+            <h1>
+                <p>Hello world paragraph</p>
+            </h1>
+        </main>
+
+        <h1>
+            <p>this is child of H1</p>
+        </h1>
+
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Adjacent Sibling selector!</legend>
+
+        <section>
+
+            <p>Hello world paragraph</p>
+
+        </section>
+
+
+        <p> this is Adjacent sibling of section </p>
+
+
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+        <legend>General Sibling selector!</legend>
+
+        <div>
+
+            <p>this is child of section </p>
+
+        </div>
+
+
+        <p>first general sibling of section </p>
+        <p>second general sibling of section </p>
+
+
+    </fieldset>
+
+</body>
+
+</html>

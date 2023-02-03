@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient in CSS</title>
+
+
+    <!-- stylesheet -->
+    <style>
+        .gradient {
+            height: 500px;
+
+            /* Linear Gradient  */
+            background-image: linear-gradient(to left, red, rgb(255, 255, 255), rgb(0, 255, 17));
+
+            /* Radial Gradient  */
+            background-image: radial-gradient(circle, red, rgb(255, 255, 255), rgb(0, 255, 17)); 
+
+            /* Reapeating Radial Gradient  */
+            background-image: repeating-radial-gradient(red 20%, white 20%, blue 10%);
+
+
+            background-image: conic-gradient(red 210deg, white , blue);
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gradient are the cobination of 2-3 colors merged together to form a soothing blend of colors  -->
+    <!-- gradient are of three types-- 1.Linear Gradient  2. Radial Gradient  3. Conic Gradient  -->
+
+    <!-- 1.linear gradient syntax--  background-image: linear-gradient(Direction, color1, color2 , color3); -->
+
+    <!-- 1.Radial gradient syntax--  background-image: Radial-gradient(Shapes-circle-eclipse-, color1, color2 , color3); -->
+
+    <!-- 1.Repeating Radial gradient syntax--  background-image: Radial-gradient(Shapes-circle-eclipse-, color1, color2 , color3); -->
+    
+    <!-- 1. conic gradient syntax--  background-image: Radial-gradient(color1 210deg, color2 , color3); -->
+
+
+
+
+    <div class="gradient"></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS </title>
+
+
+    <!-- style -->
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 1px solid;
+
+            border-radius: 100%;
+            position: relative;
+
+
+
+            /* Various animation related Properties  */
+
+            /* animation-name is used to that keyframe animation to any element just by providing the name here */
+            animation-name: colorchange;
+
+            /* animation-duration is the property used to define the number of second an animation will lasts or perfrom  */
+            animation-duration: 10s;
+
+            /* animation-iteration-count property is used to specify that how many number of times an animation will perform it can be any number or infinite */
+            animation-iteration-count: infinite;
+
+            /* animation-direction is used to specify the direction which will be followed in whole animation duration -- it can be alternate,reverse,alternate-reverse */
+            animation-direction: alternate-reverse ;
+
+
+            /* animation-timing-function:  property is used to define the smooothness of animation movement */
+            animation-timing-function: ease;
+
+            /* explain me a "animation-fill-mode" property in css with very easy language */
+
+            animation-fill-mode: forwards;
+
+            /* Now we have one short-hand for all of these animation properties  ----- 
+            
+            animation: name duration timing-function delay iteration-count direction fill-mode;  */
+
+
+            animation: colorchange 10s ease-in 2s 1 reverse forwards;
+
+        }
+
+        @keyframes colorchange {
+
+            0% {
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-color: rgb(255, 132, 71);
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                background-color: rgb(123, 150, 247);
+
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                background-color: yellow;
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                background-color: rgb(0, 132, 255);
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- In this Code we will learn about Animation using CSS -->
+
+    <!-- We can add animations to anything using CSS properties so we have various dynamic and advance properties in order to provide smoother animations to an element -->
+
+    <!--To animate any element we can use @keyframe  property to define one type of animation and then can use it anywhere -->
+
+
+
+    <div class="blockdiv">
+
+    </div>
+
+    <!-- <p>This is going to animate</p> -->
+
+
+
+</body>
+
+</html>

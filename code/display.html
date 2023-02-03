@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties in css</title>
+
+    <!-- Internal STyle -->
+
+    <style>
+        .block {
+
+            /* p tag is block element  */
+            display: block;
+            border: 1px solid;
+        }
+
+        .inline {
+            /* span tag is inline in nature  */
+
+            display: inline;
+            border: 1px solid blue;
+        }
+
+        .inline-block {
+            /* using inline-block we can easily define the widhth and hieght of an element */
+            display: inline-block;
+            width: 100px;
+
+            border: 1px solid red;
+
+
+            /* diplay- none is used to remaove the diaplay property of content means content will not show  */
+
+            /* display-hidden is used to  */
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Display Properies in CSS -->
+    <fieldset>
+        <legend>Property</legend>
+        <p class="inline">INLINE-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quia!</p>
+
+        <p class="inline">Lorem, ipsum dolor.</p>
+
+        <br>
+        <br>
+
+        <span class="block">BLOCK ---Lorem ipsum dolor sit amet.</span>
+        <span class="block"> BLOCK--- Lorem ipsum dolor sit amet.</span>
+
+        <br>
+
+        <p class="inline-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, qui?
+        </p>
+        <p class="inline-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, qui?
+        </p>
+
+
+
+    </fieldset>
+
+</body>
+
+</html>

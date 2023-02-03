@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes and Elements in CSS</title>
+
+    <!-- Stylesheet  -->
+    <style>
+        .hover:hover {
+            color: rgb(255, 68, 0);
+            border: 1px solid grey;
+        }
+
+        input:focus {
+            color: rgb(255, 0, 0);
+            border: 2px solid blue;
+
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:visited {
+            color: blanchedalmond;
+        }
+
+        nav a:first-child{
+            background-color: rgb(183, 249, 31);
+            border: 2px solid black;
+            
+        }
+        nav a:nth-child(2n+1){
+            background-color: rgb(183, 249, 31);
+            border: 2px solid black;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Commonly Used Pseudo classes in CSS -->
+
+    <!-- 1- HOVER pseudo classes is used to implement the changes in css while hovering over any element -->
+    <p class="hover">--Hovering on me will change my color--- </p>
+    <hr>
+
+    <!-- 2- FOCUS pseudo class is used to triger the CSS Chnages while user is focusing on link,button and input so that user can easily get to know that on which he is working  -->
+    <input type="text" class="focus" placeholder="Clicking on me will focus my field">
+    <hr>
+
+    <!-- 3- ACTIVE Pseudo Class is used to represent that the particular link is yet active and not yet visited and this will trigger the CSS chnages just before you are going to clicking on it and once its get visited the this class will not work for that session  -->
+
+    <!-- 3- VISITED Pseudo Class is used to represent that the particular link is already atleast once visited by the current user and to represent the change this will trigger the CSS changes just after  you are going to click on it and once its get visited then thes chnages remain same atleast for that current session  -->
+
+    <a href="https://www.google.com/">Google.com</a>
+
+
+    <!-- The ":first-child" pseudo-class matches the first child element within a container. For example, if you have a list of items within a Parent container and you want to style the first item differently, you can use "li:first-child" to select only the first list item. -->
+
+    <!-- The ":nth-child" pseudo-class matches a specific child element based on its position in the Parent container. You can specify the position by using a number, such as ":nth-child(2)" to select the second child element, or by using a formula, such as ":nth-child(2n+1)" to select every odd-numbered child element. -->
+    <nav class="child-class">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+
+
+
+</body>
+
+</html>
